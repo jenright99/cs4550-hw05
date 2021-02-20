@@ -13,7 +13,7 @@ secret_key_base =
 
 config :homework5, Homework5Web.Endpoint,
   http: [
-    port: String.to_integer(System.get_env("PORT") || "4000"),
+    port: String.to_integer(System.get_env("PORT") || "4001"),
     transport_options: [socket_opts: [:inet6]]
   ],
   secret_key_base: secret_key_base
@@ -27,3 +27,7 @@ config :homework5, Homework5Web.Endpoint,
 #
 # Then you can assemble a release by calling `mix release`.
 # See `mix help release` for more information.
+#
+#
+
+config :practice, PracticeWeb.Endpoint, server: true
